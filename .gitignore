@@ -19,3 +19,7 @@ data/chroma_db/*
 # IDE
 .vscode/
 .idea/
+
+# Local AI assistant instructions (not for the repo)
+CLAUDE.MD
+CLAUDE.md
