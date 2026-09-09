@@ -1,0 +1,25 @@
+# Backend
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.5
+
+# PDF parsing
+PyMuPDF==1.25.2
+
+# Embeddings + vector store
+sentence-transformers==3.3.1
+chromadb==0.6.3
+
+# Structured storage
+SQLAlchemy==2.0.37
+
+# LLM client (kept behind a thin interface — see backend/app/rag/qa_engine.py)
+openai==1.59.7
+
+# Frontend
+streamlit==1.41.1
+requests==2.32.3
+
+# Eval
+tqdm==4.67.1

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Data (keep directory structure, not contents)
+data/raw_pdfs/*
+!data/raw_pdfs/.gitkeep
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+*.sqlite3
+*.db
+
+# Env
+.env
+
+# IDE
+.vscode/
+.idea/
