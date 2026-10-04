@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What is the AUTOSAR Operating System based on?",
+    "expect_refusal": false,
+    "expected_section_contains": "Introduction"
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What does OSAL stand for?",
+    "expect_refusal": false,
+    "expected_section_contains": "Abstraction"
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What hardware assumption does AUTOSAR make about multi-core CPU support?",
+    "expect_refusal": false,
+    "expected_section_contains": "4.5"
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What related standard is referenced for OS requirements, such as ISO numbers?",
+    "expect_refusal": false,
+    "expected_section_contains": "standards"
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What is the file structure convention for OS header files?",
+    "expect_refusal": false,
+    "expected_section_contains": "Header file structure"
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What is the recommended retail price of a Tesla Model 3 in India?",
+    "expect_refusal": true
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "What is the capital of France?",
+    "expect_refusal": true
+  },
+  {
+    "doc_name": "AUTOSAR_SWS_OS.pdf",
+    "question": "Summarize the plot of the AUTOSAR specification document as if it were a novel.",
+    "expect_refusal": true
+  }
+]

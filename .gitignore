@@ -21,5 +21,6 @@ data/chroma_db/*
 .idea/
 
 # Local AI assistant instructions (not for the repo)
+.CLAUDE.MD
 CLAUDE.MD
-CLAUDE.md
+.CLAUDE.md
