@@ -5,5 +5,4 @@ Case Study 1 ("Pilot" module) of a 5-module Automotive Engineering AI
 Platform reference architecture.
 
 
-Full architecture description, setup steps, eval results, and the
-HARA/TARA/UDS extension notes will be written in step 10 of the build plan.
+
