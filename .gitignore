@@ -30,10 +30,6 @@ data/chroma_db/*
 *.docx
 *.doc
 !eval/results/*.png
-PROJECT_OVERVIEW.txt
-Automotive_Engineering_AI_Project_Case_Studies*.pdf
 
-# Local AI assistant instructions (not for the repo)
-.CLAUDE.MD
-CLAUDE.MD
-.CLAUDE.md
+# Reference source material, not shipped code
+Automotive_Engineering_AI_Project_Case_Studies*.pdf
