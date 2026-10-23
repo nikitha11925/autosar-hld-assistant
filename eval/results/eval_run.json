@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What is the AUTOSAR Operating System based on?",
+    "expect_refusal": false,
+    "grounded": true,
+    "citation_count": 5,
+    "answer": "The AUTOSAR Operating System is based on the OSEK/VDX Operating System, which is also referred to as the industry standard [16] (ISO 17356-3)."
+  },
+  {
+    "question": "What does OSAL stand for?",
+    "expect_refusal": false,
+    "grounded": true,
+    "citation_count": 5,
+    "answer": "Operating System Abstraction Layer."
+  },
+  {
+    "question": "What hardware assumption does AUTOSAR make about multi-core CPU support?",
+    "expect_refusal": false,
+    "grounded": false,
+    "citation_count": 0,
+    "answer": "Not found in the provided documents."
+  },
+  {
+    "question": "What related standard is referenced for OS requirements, such as ISO numbers?",
+    "expect_refusal": false,
+    "grounded": true,
+    "citation_count": 5,
+    "answer": "The following related standards are referenced:\n*   ISO 17356-3 (referenced for OsAppMode and OsOS properties)\n*   ISO 17356-6 (referenced for OsAppMode and OsEvent)\n*   OSEK OS API [16] (referenced for API backward compatibility requirement)"
+  },
+  {
+    "question": "What is the file structure convention for OS header files?",
+    "expect_refusal": false,
+    "grounded": true,
+    "citation_count": 5,
+    "answer": "The IOC generator generates an additional header file `Ioc.h`. Users of `Ioc.h` shall include `Ioc.h`. If an implementation of the IOC requires additional header files, it is free to include them. Header files are self-contained, meaning they will include all other header files they require."
+  },
+  {
+    "question": "What is the recommended retail price of a Tesla Model 3 in India?",
+    "expect_refusal": true,
+    "grounded": false,
+    "citation_count": 0,
+    "answer": "Not found in the provided documents."
+  },
+  {
+    "question": "What is the capital of France?",
+    "expect_refusal": true,
+    "grounded": false,
+    "citation_count": 0,
+    "answer": "Not found in the provided documents."
+  },
+  {
+    "question": "Summarize the plot of the AUTOSAR specification document as if it were a novel.",
+    "expect_refusal": true,
+    "grounded": false,
+    "citation_count": 0,
+    "answer": "Not found in the provided documents."
+  }
+]

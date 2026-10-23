@@ -20,6 +20,19 @@ data/chroma_db/*
 .vscode/
 .idea/
 
+# Submission-only / scratch material — not part of the shipped codebase.
+# Images are ignored by default except real generated results under eval/results/.
+*.pptx
+*.ppt
+*.jpeg
+*.jpg
+*.png
+*.docx
+*.doc
+!eval/results/*.png
+PROJECT_OVERVIEW.txt
+Automotive_Engineering_AI_Project_Case_Studies*.pdf
+
 # Local AI assistant instructions (not for the repo)
 .CLAUDE.MD
 CLAUDE.MD

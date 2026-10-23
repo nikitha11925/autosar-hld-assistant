@@ -52,6 +52,7 @@ def run() -> None:
     grounded_cases = 0
     section_hits = 0
     grounded_with_citations = 0
+    per_case_results = []  # raw per-question outcomes, saved for eval/plot_eval_results.py
 
     for i, case in enumerate(cases):
         if i > 0:
@@ -79,6 +80,15 @@ def run() -> None:
             )
         response.raise_for_status()
         data = response.json()
+        per_case_results.append(
+            {
+                "question": question,
+                "expect_refusal": expect_refusal,
+                "grounded": data["grounded"],
+                "citation_count": len(data["citations"]),
+                "answer": data["answer"],
+            }
+        )
 
         if expect_refusal:
             refusal_cases += 1
@@ -132,6 +142,13 @@ def run() -> None:
                 f"Retrieval section-match precision: {section_hits}/{expected_section_cases} "
                 f"({100 * section_hits / expected_section_cases:.0f}%)"
             )
+
+    results_dir = Path(__file__).parent / "results"
+    results_dir.mkdir(exist_ok=True)
+    with open(results_dir / "eval_run.json", "w", encoding="utf-8") as f:
+        json.dump(per_case_results, f, indent=2)
+    print(f"\nRaw per-question results saved to {results_dir / 'eval_run.json'}")
+    print("Run `python eval/plot_eval_results.py` to generate graphs from this run.")
 
 
 if __name__ == "__main__":
